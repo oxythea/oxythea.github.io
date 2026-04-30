@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Oxythea — при поддержке SmartCon AI</title>
+<link rel="stylesheet" href="../style.css">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Armenian:wght@300;400;500;600;700;900&family=Noto+Serif+Armenian:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-bg"></div>
+  <div class="loader-content">
+    <div class="loader-text">
+      <span>O</span><span>x</span><span>y</span><span>t</span><span>h</span><span>e</span><span>a</span>
+    </div>
+    <div class="loader-sub">при поддержке SmartCon AI</div>
+    <div class="loader-bar"><div class="loader-fill"></div></div>
+  </div>
+</div>
+
+<!-- PARTICLES -->
+<div id="particles"></div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-container">
+    <div class="nav-logo">
+      <span class="logo-text">Oxythea</span>
+    </div>
+    <div class="lang-switcher" aria-label="Язык">
+      <a href="../hy/">HY</a>
+      <a href="../ru/" class="active">RU</a>
+      <a href="../en/">EN</a>
+    </div>
+    <div class="nav-toggle" id="navToggle">
+      <span></span><span></span><span></span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link">Главная</a></li>
+      <li><a href="#about" class="nav-link">О нас</a></li>
+      <li><a href="#product" class="nav-link">Продукт</a></li>
+      <li><a href="#mission" class="nav-link">Миссия</a></li>
+      <li><a href="#impact" class="nav-link">Влияние</a></li>
+      <li><a href="#donate" class="nav-link nav-cta">Пожертвование</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-bg">
+    <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=1920&q=80" alt="Лес" class="hero-img hero-img-1 active">
+    <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1920&q=80" alt="Туманный лес" class="hero-img hero-img-2">
+    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1920&q=80" alt="Природа" class="hero-img hero-img-3">
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="hero-content">
+    <h1 class="hero-title reveal">
+      <span class="line">Чистый воздух,</span>
+      <span class="line accent">Живая Земля</span>
+    </h1>
+    <p class="hero-desc reveal">Oxythea с помощью искусственного интеллекта анализирует уровень загрязнения воздуха, планирует посадку деревьев и создает зеленое будущее для следующих поколений.</p>
+    <div class="hero-btns reveal">
+      <a href="#product" class="btn-primary">Познакомиться с продуктом</a>
+      <a href="#donate" class="btn-secondary">Поддержать нас</a>
+    </div>
+    <div class="hero-stats reveal">
+      <div class="stat">
+        <div class="stat-num" data-target="2847">0</div>
+        <div class="stat-label">Посаженных деревьев</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <div class="stat-num" data-target="12">0</div>
+        <div class="stat-label">Районы</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <div class="stat-num" data-target="340">0</div>
+        <div class="stat-label">Волонтеры</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    <span>Прокрутить вниз</span>
+  </div>
+</section>
+
+<!-- AIR QUALITY BAND -->
+<section class="air-band">
+  <div class="air-band-inner">
+    <div class="air-ticker">
+      <span>🌿 Ереван: индекс качества воздуха 87 — умеренный</span>
+      <span>🌲 Севан: индекс качества воздуха 42 — хороший</span>
+      <span>🍃 Гюмри: индекс качества воздуха 61 — умеренный</span>
+      <span>🌱 Ванадзор: индекс качества воздуха 55 — удовлетворительный</span>
+      <span>💚 Анализ SmartCon AI активен</span>
+      <span>🌿 Ереван: индекс качества воздуха 87 — умеренный</span>
+      <span>🌲 Севан: индекс качества воздуха 42 — хороший</span>
+      <span>🍃 Гюмри: индекс качества воздуха 61 — умеренный</span>
+      <span>🌱 Ванадзор: индекс качества воздуха 55 — удовлетворительный</span>
+      <span>💚 Анализ SmartCon AI активен</span>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-images">
+        <div class="img-stack">
+          <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=600&q=80" alt="Деревья" class="img-main reveal-left">
+          <img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?w=400&q=80" alt="Лесная тропа" class="img-secondary reveal-left delay-2">
+        </div>
+      </div>
+      <div class="about-text">
+        <div class="section-label reveal">О нас</div>
+        <h2 class="section-title reveal">Oxythea<br><span class="accent">дыхание</span><br>будущего</h2>
+        <p class="reveal">Oxythea создана SmartCon AI для борьбы с загрязнением воздуха в Армении и во всем мире. Наш искусственный интеллект анализирует экологические данные, координаты и особенности местности, а затем формирует точные программы посадки деревьев.</p>
+        <p class="reveal">Мы верим, что технологии и природа вместе могут создать более здоровый, чистый и зеленый мир.</p>
+        <div class="about-pillars reveal">
+          <div class="pillar">
+            <div class="pillar-icon">🧠</div>
+            <div>
+              <strong>Анализ искусственного интеллекта</strong>
+              <p>Точная экологическая диагностика SmartCon AI</p>
+            </div>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon">📍</div>
+            <div>
+              <strong>Точность геолокации</strong>
+              <p>Точные координаты для посадки деревьев</p>
+            </div>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon">🌱</div>
+            <div>
+              <strong>Зеленые программы</strong>
+              <p>Персонализированные решения для посадки деревьев</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCT -->
+<section id="product" class="product">
+  <div class="product-bg">
+    <img src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=1920&q=80" alt="Лесной фон" class="product-bg-img">
+    <div class="product-overlay"></div>
+  </div>
+  <div class="container">
+    <div class="section-label light reveal">Продукт</div>
+    <h2 class="section-title light reveal">SmartCon AI —<br><span class="accent-light">что создает</span></h2>
+    <p class="section-desc light reveal">Наша платформа создает комплексные экологические решения, объединяя спутниковые данные, климатический анализ и стратегии посадки деревьев.</p>
+
+    <div class="features-grid">
+      <div class="feature-card reveal">
+        <div class="feature-img">
+          <img src="https://images.unsplash.com/photo-1569163139599-0f4517e36f51?w=500&q=80" alt="Качество воздуха">
+        </div>
+        <div class="feature-body">
+          <div class="feature-icon">🌫️</div>
+          <h3>Загрязнение воздуха</h3>
+          <p>В реальном времени анализируем уровень мелкой пыли, углекислого газа и оксидов азота по всей территории.</p>
+        </div>
+      </div>
+      <div class="feature-card reveal delay-1">
+        <div class="feature-img">
+          <img src="https://images.unsplash.com/photo-1609770583993-8cce3d7e8bdf?w=500&q=80" alt="Картографирование местности">
+        </div>
+        <div class="feature-body">
+          <div class="feature-icon">🗺️</div>
+          <h3>Анализ координат</h3>
+          <p>С помощью точной геолокации изучаем каждый участок, оцениваем качество почвы и климат.</p>
+        </div>
+      </div>
+      <div class="feature-card reveal delay-2">
+        <div class="feature-img">
+          <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=500&q=80" alt="Посадка деревьев">
+        </div>
+        <div class="feature-body">
+          <div class="feature-icon">🌳</div>
+          <h3>Программа посадки деревьев</h3>
+          <p>Система рассчитывает, какое дерево и где посадить, чтобы обеспечить максимум кислорода, тени и устойчивости.</p>
+        </div>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-img">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&q=80" alt="План действий">
+        </div>
+        <div class="feature-body">
+          <div class="feature-icon">📋</div>
+          <h3>План действий</h3>
+          <p>Создаем конкретные и выполнимые программы для муниципалитетов, предприятий и волонтерских организаций.</p>
+        </div>
+      </div>
+      <div class="feature-card reveal delay-1">
+        <div class="feature-img">
+          <img src="https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?w=500&q=80" alt="Мониторинг">
+        </div>
+        <div class="feature-body">
+          <div class="feature-icon">📡</div>
+          <h3>Непрерывный мониторинг</h3>
+          <p>Полное отслеживание роста посаженных деревьев, экологического эффекта и улучшения качества воздуха.</p>
+        </div>
+      </div>
+      <div class="feature-card reveal delay-2">
+        <div class="feature-img">
+          <img src="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?w=500&q=80" alt="Отчет">
+        </div>
+        <div class="feature-body">
+          <div class="feature-icon">📊</div>
+          <h3>Отчеты</h3>
+          <p>Полные отчеты о качестве воздуха для правительства, НКО, инвесторов и общества.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOR WHOM -->
+<section id="mission" class="mission">
+  <div class="container">
+    <div class="section-label reveal">Для кого</div>
+    <h2 class="section-title reveal">Oxythea работает<br><span class="accent">для всех</span></h2>
+    <div class="audience-grid">
+      <div class="audience-card reveal">
+        <img src="https://images.unsplash.com/photo-1577495508048-b635879837f1?w=400&q=80" alt="Правительство">
+        <div class="audience-body">
+          <h3>🏛️ Правительство</h3>
+          <p>Разработка политики на основе данных, отчеты о качестве воздуха и планирование зеленой инфраструктуры.</p>
+        </div>
+      </div>
+      <div class="audience-card reveal delay-1">
+        <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&q=80" alt="Предприятия">
+        <div class="audience-body">
+          <h3>🏢 Предприятия</h3>
+          <p>Отчеты об устойчивом развитии, зеленая ответственность и снижение углеродного следа по стандартам ООН.</p>
+        </div>
+      </div>
+      <div class="audience-card reveal delay-2">
+        <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=400&q=80" alt="Сообщество">
+        <div class="audience-body">
+          <h3>🤝 Общество</h3>
+          <p>Волонтерские программы посадки деревьев, экологическое образование и создание зеленых районов.</p>
+        </div>
+      </div>
+      <div class="audience-card reveal delay-3">
+        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&q=80" alt="Школы">
+        <div class="audience-body">
+          <h3>🏫 Школы</h3>
+          <p>Экологические образовательные программы и школьные инициативы по посадке деревьев.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- IMPACT -->
+<section id="impact" class="impact">
+  <div class="impact-bg">
+    <img src="https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?w=1920&q=80" alt="Фон влияния">
+    <div class="impact-overlay"></div>
+  </div>
+  <div class="container">
+    <div class="section-label light reveal">Влияние</div>
+    <h2 class="section-title light reveal">Наше <span class="accent-light">влияние</span><br>в цифрах</h2>
+    <div class="impact-cards">
+      <div class="impact-card reveal">
+        <div class="impact-icon">🌳</div>
+        <div class="impact-num" data-target="2847">0</div>
+        <div class="impact-unit">Посаженных деревьев</div>
+        <div class="impact-desc">В 12 регионах Армении под руководством искусственного интеллекта</div>
+      </div>
+      <div class="impact-card reveal delay-1">
+        <div class="impact-icon">💨</div>
+        <div class="impact-num" data-target="34">0</div>
+        <div class="impact-unit">Улучшение качества воздуха</div>
+        <div class="impact-desc">Рост качества воздуха в местах посадки деревьев</div>
+      </div>
+      <div class="impact-card reveal delay-2">
+        <div class="impact-icon">🗺️</div>
+        <div class="impact-num" data-target="156">0</div>
+        <div class="impact-unit">кв. км покрытия</div>
+        <div class="impact-desc">Проанализированные и спланированные территории</div>
+      </div>
+      <div class="impact-card reveal delay-3">
+        <div class="impact-icon">👥</div>
+        <div class="impact-num" data-target="340">0</div>
+        <div class="impact-unit">Волонтеров</div>
+        <div class="impact-desc">Активное участие в программе</div>
+      </div>
+    </div>
+
+    <!-- Tree species -->
+    <div class="trees-section reveal">
+      <h3 class="trees-title">Рекомендуемые виды деревьев для Армении</h3>
+      <div class="trees-list">
+        <div class="tree-item">
+          <img src="https://images.unsplash.com/photo-1564419431695-6e73e5ea8d4b?w=300&q=80" alt="Дуб">
+          <div class="tree-info">
+            <strong>Дуб</strong>
+            <p>Высокая выработка кислорода, устойчивость и срок жизни более 200 лет.</p>
+            <span class="tree-tag">🌍 Устойчив к климату</span>
+          </div>
+        </div>
+        <div class="tree-item">
+          <img src="https://images.unsplash.com/photo-1596395463033-d7b142ddb0ae?w=300&q=80" alt="Сосна">
+          <div class="tree-info">
+            <strong>Сосна</strong>
+            <p>Устойчива к зиме, фильтрует мелкую пыль и быстро растет.</p>
+            <span class="tree-tag">❄️ Устойчива к зиме</span>
+          </div>
+        </div>
+        <div class="tree-item">
+          <img src="https://images.unsplash.com/photo-1567093321955-3d99e6afcebe?w=300&q=80" alt="Тополь">
+          <div class="tree-info">
+            <strong>Тополь</strong>
+            <p>Быстро растет, хорошо впитывает воду и снижает уровень углекислого газа.</p>
+            <span class="tree-tag">⚡ Быстрый рост</span>
+          </div>
+        </div>
+        <div class="tree-item">
+          <img src="https://images.unsplash.com/photo-1551218372-a8789b81b253?w=300&q=80" alt="Черешня">
+          <div class="tree-info">
+            <strong>Черешня</strong>
+            <p>Плодовое дерево, красиво цветет и поддерживает биоразнообразие.</p>
+            <span class="tree-tag">🍒 Плодовое</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DONATE -->
+<section id="donate" class="donate">
+  <div class="container">
+    <div class="donate-header">
+      <div class="section-label reveal">Пожертвование</div>
+      <h2 class="section-title reveal">Ты можешь<br><span class="accent">изменить ситуацию</span></h2>
+      <p class="section-desc reveal">Пожертвование начинается от 100 драмов и может быть любой суммы. Каждая поддержка помогает сажать деревья, очищать воздух и укреплять зеленые сообщества.</p>
+    </div>
+
+    <!-- Progress -->
+    <div class="progress-section reveal">
+      <div class="progress-header">
+        <div class="progress-info">
+          <span class="progress-raised">Собрано 2,200,000 ֏</span>
+          <span class="progress-goal">Цель: 3,200,000 ֏</span>
+        </div>
+        <div class="progress-pct">68.75%</div>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-fill" data-width="68.75">
+          <div class="progress-pulse"></div>
+        </div>
+      </div>
+      <div class="progress-milestones">
+        <div class="milestone done">
+          <div class="ms-dot done"></div>
+          <span>1,200,000 ֏<br><small>Первый этап выполнен</small></span>
+        </div>
+        <div class="milestone active">
+          <div class="ms-dot active"></div>
+          <span>2,200,000 ֏<br><small>Текущий этап</small></span>
+        </div>
+        <div class="milestone">
+          <div class="ms-dot"></div>
+          <span>3,200,000 ֏<br><small>Цель</small></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="custom-donate reveal">
+      <div>
+        <h3>Индивидуальное пожертвование</h3>
+        <p>Можно указать сумму от 100 драмов без верхнего ограничения.</p>
+      </div>
+      <div class="custom-donate-form">
+        <input type="number" id="customAmount" min="100" step="100" value="100" aria-label="Сумма пожертвования">
+        <button class="btn-donate featured-btn" onclick="openCustomDonate()">Пожертвовать указанную сумму</button>
+        <span id="customAmountError" class="custom-error" role="alert"></span>
+      </div>
+    </div>
+
+    <!-- Donate cards -->
+    <div class="donate-grid">
+      <div class="donate-card reveal">
+        <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=500&q=80" alt="Посадить дерево">
+        <div class="donate-body">
+          <div class="donate-amount">5,000 ֏</div>
+          <h3>🌱 Посадить дерево</h3>
+          <p>Благодаря твоему пожертвованию одно дерево будет посажено в подходящем месте с точным планированием.</p>
+          <button class="btn-donate" onclick="openDonate(5000)">Пожертвовать 5,000 ֏</button>
+        </div>
+      </div>
+      <div class="donate-card featured reveal delay-1">
+        <img src="https://images.unsplash.com/photo-1425913397330-cf8af2ff40a1?w=500&q=80" alt="Зеленая зона">
+        <div class="donate-body">
+          <div class="donate-amount">25,000 ֏</div>
+          <h3>🌳 Зеленая зона</h3>
+          <p>Пять деревьев, мониторинг качества воздуха, благодарственное письмо и отчет о влиянии.</p>
+          <button class="btn-donate featured-btn" onclick="openDonate(25000)">Пожертвовать 25,000 ֏</button>
+        </div>
+      </div>
+      <div class="donate-card reveal delay-2">
+        <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=500&q=80" alt="Лес">
+        <div class="donate-body">
+          <div class="donate-amount">100,000 ֏</div>
+          <h3>🌲 Спонсор леса</h3>
+          <p>Двадцать пять деревьев, упоминание имени или логотипа и полный отчет о влиянии.</p>
+          <button class="btn-donate" onclick="openDonate(100000)">Пожертвовать 100,000 ֏</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bank info -->
+    <div class="bank-info reveal">
+      <div class="bank-card">
+        <div class="bank-logo">
+          <div class="bank-icon">🏦</div>
+          <div>
+            <strong>Перевод на карту</strong>
+            <small>Карта для пожертвований</small>
+          </div>
+        </div>
+        <div class="bank-details">
+          <div class="bank-row">
+            <span>Держатель карты</span>
+            <strong>Инициатива Oxythea</strong>
+          </div>
+          <div class="bank-row">
+            <span>Номер карты</span>
+            <strong id="cardNumber">5501 0400 1147 9879</strong>
+            <button class="copy-btn" onclick="copyCard()">📋</button>
+          </div>
+          <div class="bank-row">
+            <span>Минимальная сумма</span>
+            <strong>100 ֏</strong>
+          </div>
+          <div class="bank-row">
+            <span>Назначение</span>
+            <strong>Oxythea: зеленая экология</strong>
+          </div>
+        </div>
+        <div class="bank-qr">
+          <div class="qr-placeholder">
+            <div class="qr-grid"></div>
+            <small>Быстрая оплата</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="donors-ticker reveal">
+      <span class="donors-label">💚 Последние доноры:</span>
+      <div class="donors-scroll">
+        <span>Арам М. — 50,000 ֏</span>
+        <span>Нарине К. — 10,000 ֏</span>
+        <span>Давид А. — 25,000 ֏</span>
+        <span>Анна С. — 5,000 ֏</span>
+        <span>Команда SmartCon AI — 200,000 ֏</span>
+        <span>Мгер Г. — 15,000 ֏</span>
+        <span>Арам М. — 50,000 ֏</span>
+        <span>Нарине К. — 10,000 ֏</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-bg">
+    <img src="https://images.unsplash.com/photo-1511497584788-876760111969?w=1920&q=80" alt="Лесной фон">
+    <div class="footer-overlay"></div>
+  </div>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <span>Oxythea</span>
+        </div>
+        <p>Экологическая программа при поддержке SmartCon AI. Чистый воздух, зеленое будущее и здоровый мир.</p>
+        <div class="footer-social">
+          <a href="#" class="social-btn">ФБ</a>
+          <a href="#" class="social-btn">ИГ</a>
+          <a href="#" class="social-btn">ЛИ</a>
+          <a href="#" class="social-btn">ТВ</a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Навигация</h4>
+        <ul>
+          <li><a href="#home">Главная</a></li>
+          <li><a href="#about">О нас</a></li>
+          <li><a href="#product">Продукт</a></li>
+          <li><a href="#donate">Пожертвование</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>На сайте</h4>
+        <ul>
+          <li><a href="#">Конфиденциальность</a></li>
+          <li><a href="#">Правила</a></li>
+          <li><a href="#">Присоединиться</a></li>
+          <li><a href="#">Частые вопросы</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Связаться с нами</h4>
+        <p>📧 oxythea@smartconai.store</p>
+    
+        <p>📍 Ереван, Армения</p>
+        <div class="footer-powered">
+          <span>При поддержке</span>
+          <strong>SmartCon AI</strong>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Oxythea: Все права защищены.</p>
+      <p>Создано для более зеленой Армении.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- DONATE MODAL -->
+<div id="donateModal" class="modal-overlay" onclick="closeModal(event)">
+  <div class="modal">
+    <button class="modal-close" onclick="closeDonate()">✕</button>
+    <div class="modal-icon">💚</div>
+    <h3>Пожертвование для Oxythea</h3>
+    <p>Твое пожертвование поможет очищать воздух, сажать деревья и создавать зеленые сообщества.</p>
+    <div class="modal-amount" id="modalAmount">5,000 ֏</div>
+    <div class="modal-bank">
+      <div class="modal-bank-row">
+        <span>Способ перевода</span><strong>Перевод на карту</strong>
+      </div>
+      <div class="modal-bank-row">
+        <span>Держатель карты</span><strong>Инициатива Oxythea</strong>
+      </div>
+      <div class="modal-bank-row">
+        <span>Номер карты</span><strong id="modalCardNumber">5501 0400 1147 9879</strong>
+      </div>
+    </div>
+    <button class="btn-primary" style="width:100%;margin-top:1.5rem" onclick="closeDonate()">Подтвердил ✓</button>
+  </div>
+</div>
+
+<script src="../script.js"></script>
+</body>
+</html>

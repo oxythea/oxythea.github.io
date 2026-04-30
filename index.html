@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Oxythea — SmartCon AI-ի աջակցությամբ</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Armenian:wght@300;400;500;600;700;900&family=Noto+Serif+Armenian:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-bg"></div>
+  <div class="loader-content">
+    <div class="loader-text">
+      <span>O</span><span>x</span><span>y</span><span>t</span><span>h</span><span>e</span><span>a</span>
+    </div>
+    <div class="loader-sub">SmartCon AI-ի աջակցությամբ</div>
+    <div class="loader-bar"><div class="loader-fill"></div></div>
+  </div>
+</div>
+
+<!-- PARTICLES -->
+<div id="particles"></div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-container">
+    <div class="nav-logo">
+      <span class="logo-text">Oxythea</span>
+    </div>
+    <div class="lang-switcher" aria-label="Լեզու">
+      <a href="../hy/" class="active">HY</a>
+      <a href="../ru/">RU</a>
+      <a href="../en/">EN</a>
+    </div>
+    <div class="nav-toggle" id="navToggle">
+      <span></span><span></span><span></span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link">Գլխավոր</a></li>
+      <li><a href="#about" class="nav-link">Մեր մասին</a></li>
+      <li><a href="#product" class="nav-link">Արտադրանք</a></li>
+      <li><a href="#mission" class="nav-link">Առաքելություն</a></li>
+      <li><a href="#impact" class="nav-link">Ազդեցություն</a></li>
+      <li><a href="#donate" class="nav-link nav-cta">Նվիրատվություն</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-bg">
+    <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=1920&q=80" alt="Անտառ" class="hero-img hero-img-1 active">
+    <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1920&q=80" alt="Մառախլապատ անտառ" class="hero-img hero-img-2">
+    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1920&q=80" alt="Բնություն" class="hero-img hero-img-3">
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="hero-content">
+    <h1 class="hero-title reveal">
+      <span class="line">Մաքուր Օդ,</span>
+      <span class="line accent">Ապրող Երկիր</span>
+    </h1>
+    <p class="hero-desc reveal">Oxythea-ն արհեստական բանականության միջոցով վերլուծում է օդի աղտոտվածության մակարդակը, պլանավորում ծառատունկ և ստեղծում կանաչ ապագա հաջորդ սերունդների համար։</p>
+    <div class="hero-btns reveal">
+      <a href="#product" class="btn-primary">Ծանոթացիր արտադրանքին</a>
+      <a href="#donate" class="btn-secondary">Աջակցիր մեզ</a>
+    </div>
+    <div class="hero-stats reveal">
+      <div class="stat">
+        <div class="stat-num" data-target="2847">0</div>
+        <div class="stat-label">Տնկված ծառ</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <div class="stat-num" data-target="12">0</div>
+        <div class="stat-label">Շրջաններ</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <div class="stat-num" data-target="340">0</div>
+        <div class="stat-label">Կամավորներ</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    <span>Շարժվել ներքև</span>
+  </div>
+</section>
+
+<!-- AIR QUALITY BAND -->
+<section class="air-band">
+  <div class="air-band-inner">
+    <div class="air-ticker">
+      <span>🌿 Երևան՝ օդի որակի ցուցիչ 87 — չափավոր</span>
+      <span>🌲 Սևան՝ օդի որակի ցուցիչ 42 — լավ</span>
+      <span>🍃 Գյումրի՝ օդի որակի ցուցիչ 61 — չափավոր</span>
+      <span>🌱 Վանաձոր՝ օդի որակի ցուցիչ 55 — բավարար</span>
+      <span>💚 SmartCon AI-ի վերլուծությունն ակտիվ է</span>
+      <span>🌿 Երևան՝ օդի որակի ցուցիչ 87 — չափավոր</span>
+      <span>🌲 Սևան՝ օդի որակի ցուցիչ 42 — լավ</span>
+      <span>🍃 Գյումրի՝ օդի որակի ցուցիչ 61 — չափավոր</span>
+      <span>🌱 Վանաձոր՝ օդի որակի ցուցիչ 55 — բավարար</span>
+      <span>💚 SmartCon AI-ի վերլուծությունն ակտիվ է</span>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-images">
+        <div class="img-stack">
+          <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=600&q=80" alt="Ծառեր" class="img-main reveal-left">
+          <img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?w=400&q=80" alt="Անտառային արահետ" class="img-secondary reveal-left delay-2">
+        </div>
+      </div>
+      <div class="about-text">
+        <div class="section-label reveal">Մեր մասին</div>
+        <h2 class="section-title reveal">Oxythea-ն<br><span class="accent">ապագայի</span><br>շնչառությունն է</h2>
+        <p class="reveal">Oxythea-ն ստեղծվել է SmartCon AI-ի կողմից՝ Հայաստանի և աշխարհի օդի աղտոտվածության դեմ պայքարելու նպատակով։ Մեր արհեստական բանականությունը վերլուծում է բնապահպանական տվյալները, տեղանքի կոորդինատները և առանձնահատկությունները, ապա կազմում ծառատնկման ճշգրիտ ծրագրեր։</p>
+        <p class="reveal">Մենք հավատում ենք, որ տեխնոլոգիան և բնությունը կարող են ձեռք ձեռք բռնած ստեղծել ավելի առողջ, ավելի մաքուր, ավելի կանաչ աշխարհ։</p>
+        <div class="about-pillars reveal">
+          <div class="pillar">
+            <div class="pillar-icon">🧠</div>
+            <div>
+              <strong>Արհեստական բանականության վերլուծություն</strong>
+              <p>SmartCon AI-ի ճշգրիտ բնապահպանական ախտորոշում</p>
+            </div>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon">📍</div>
+            <div>
+              <strong>Տեղորոշման ճշգրտություն</strong>
+              <p>Ծառատնկման համար ճշգրիտ կոորդինատներ</p>
+            </div>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon">🌱</div>
+            <div>
+              <strong>Կանաչ ծրագրեր</strong>
+              <p>Անհատականացված ծառատնկման լուծումներ</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCT -->
+<section id="product" class="product">
+  <div class="product-bg">
+    <img src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=1920&q=80" alt="Անտառային ֆոն" class="product-bg-img">
+    <div class="product-overlay"></div>
+  </div>
+  <div class="container">
+    <div class="section-label light reveal">Արտադրանք</div>
+    <h2 class="section-title light reveal">SmartCon AI —<br><span class="accent-light">ինչ է ստեղծում</span></h2>
+    <p class="section-desc light reveal">Մեր հարթակը ստեղծում է համապարփակ բնապահպանական լուծումներ՝ համադրելով արբանյակային տվյալները, կլիմայական վերլուծությունը և ծառատնկման ռազմավարությունները։</p>
+
+    <div class="features-grid">
+      <div class="feature-card reveal">
+        <div class="feature-img">
+          <img src="https://images.unsplash.com/photo-1569163139599-0f4517e36f51?w=500&q=80" alt="Օդի որակ">
+        </div>
+        <div class="feature-body">
+          <div class="feature-icon">🌫️</div>
+          <h3>Օդի աղտոտվածություն</h3>
+          <p>Իրական ժամանակում վերլուծում ենք մանր փոշու, ածխաթթու գազի և ազոտի օքսիդների մակարդակները ամբողջ տարածքում։</p>
+        </div>
+      </div>
+      <div class="feature-card reveal delay-1">
+        <div class="feature-img">
+          <img src="https://images.unsplash.com/photo-1609770583993-8cce3d7e8bdf?w=500&q=80" alt="Տեղանքի քարտեզագրում">
+        </div>
+        <div class="feature-body">
+          <div class="feature-icon">🗺️</div>
+          <h3>Կոորդինատների վերլուծություն</h3>
+          <p>Ճշգրիտ տեղորոշմամբ ուսումնասիրում ենք յուրաքանչյուր տարածք, գնահատում հողի որակը և կլիման։</p>
+        </div>
+      </div>
+      <div class="feature-card reveal delay-2">
+        <div class="feature-img">
+          <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=500&q=80" alt="Ծառատունկ">
+        </div>
+        <div class="feature-body">
+          <div class="feature-icon">🌳</div>
+          <h3>Ծառատնկման ծրագիր</h3>
+          <p>Համակարգը հաշվարկում է՝ որ ծառը որ վայրում տնկել՝ առավելագույն թթվածին, ստվեր և կայունություն ապահովելու համար։</p>
+        </div>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-img">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&q=80" alt="Գործողությունների ծրագիր">
+        </div>
+        <div class="feature-body">
+          <div class="feature-icon">📋</div>
+          <h3>Գործողությունների ծրագիր</h3>
+          <p>Ստեղծում ենք կոնկրետ, կատարելի ծրագրեր՝ ՏԻՄ-ների, ձեռնարկությունների և կամավոր կազմակերպությունների համար։</p>
+        </div>
+      </div>
+      <div class="feature-card reveal delay-1">
+        <div class="feature-img">
+          <img src="https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?w=500&q=80" alt="Մշտադիտարկում">
+        </div>
+        <div class="feature-body">
+          <div class="feature-icon">📡</div>
+          <h3>Շարունակական մշտադիտարկում</h3>
+          <p>Տնկված ծառերի աճի, բնապահպանական ազդեցության և օդի որակի բարելավման ամբողջական հետևում։</p>
+        </div>
+      </div>
+      <div class="feature-card reveal delay-2">
+        <div class="feature-img">
+          <img src="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?w=500&q=80" alt="Հաշվետվություն">
+        </div>
+        <div class="feature-body">
+          <div class="feature-icon">📊</div>
+          <h3>Հաշվետվություններ</h3>
+          <p>Օդի որակի ամբողջական հաշվետվություններ կառավարության, ՀԿ-ների, ներդրողների և հասարակության համար։</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOR WHOM -->
+<section id="mission" class="mission">
+  <div class="container">
+    <div class="section-label reveal">Ում համար</div>
+    <h2 class="section-title reveal">Oxythea-ն աշխատում է<br><span class="accent">բոլորի համար</span></h2>
+    <div class="audience-grid">
+      <div class="audience-card reveal">
+        <img src="https://images.unsplash.com/photo-1577495508048-b635879837f1?w=400&q=80" alt="Կառավարություն">
+        <div class="audience-body">
+          <h3>🏛️ Կառավարություն</h3>
+          <p>Տվյալահեն քաղաքականության մշակում, օդի որակի հաշվետվություններ և կանաչ ենթակառուցվածքի պլանավորում։</p>
+        </div>
+      </div>
+      <div class="audience-card reveal delay-1">
+        <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&q=80" alt="Ձեռնարկություններ">
+        <div class="audience-body">
+          <h3>🏢 Ձեռնարկություններ</h3>
+          <p>Կայունության հաշվետվություններ, կանաչ պատասխանատվություն և ածխածնային հետքի նվազեցում՝ ՄԱԿ-ի չափանիշներով։</p>
+        </div>
+      </div>
+      <div class="audience-card reveal delay-2">
+        <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=400&q=80" alt="Համայնք">
+        <div class="audience-body">
+          <h3>🤝 Հանրություն</h3>
+          <p>Կամավոր ծառատնկման ծրագրեր, բնապահպանական կրթություն և կանաչ շրջանների ստեղծում։</p>
+        </div>
+      </div>
+      <div class="audience-card reveal delay-3">
+        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&q=80" alt="Դպրոցներ">
+        <div class="audience-body">
+          <h3>🏫 Դպրոցներ</h3>
+          <p>Բնապահպանական կրթական ծրագրեր և աշակերտական ծառատնկման նախաձեռնություններ։</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- IMPACT -->
+<section id="impact" class="impact">
+  <div class="impact-bg">
+    <img src="https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?w=1920&q=80" alt="Ազդեցության ֆոն">
+    <div class="impact-overlay"></div>
+  </div>
+  <div class="container">
+    <div class="section-label light reveal">Ազդեցություն</div>
+    <h2 class="section-title light reveal">Մեր <span class="accent-light">ազդեցությունը</span><br>թվերով</h2>
+    <div class="impact-cards">
+      <div class="impact-card reveal">
+        <div class="impact-icon">🌳</div>
+        <div class="impact-num" data-target="2847">0</div>
+        <div class="impact-unit">Տնկված ծառ</div>
+        <div class="impact-desc">Հայաստանի 12 մարզում՝ արհեստական բանականության ուղղորդմամբ</div>
+      </div>
+      <div class="impact-card reveal delay-1">
+        <div class="impact-icon">💨</div>
+        <div class="impact-num" data-target="34">0</div>
+        <div class="impact-unit">Օդի որակի բարելավում</div>
+        <div class="impact-desc">Ծառատնկման վայրերում օդի որակի աճ</div>
+      </div>
+      <div class="impact-card reveal delay-2">
+        <div class="impact-icon">🗺️</div>
+        <div class="impact-num" data-target="156">0</div>
+        <div class="impact-unit">քառ. կմ ծածկույթ</div>
+        <div class="impact-desc">Վերլուծված ու ծրագրված տարածքներ</div>
+      </div>
+      <div class="impact-card reveal delay-3">
+        <div class="impact-icon">👥</div>
+        <div class="impact-num" data-target="340">0</div>
+        <div class="impact-unit">Կամավոր</div>
+        <div class="impact-desc">Ծրագրին ակտիվ մասնակցություն</div>
+      </div>
+    </div>
+
+    <!-- Tree species -->
+    <div class="trees-section reveal">
+      <h3 class="trees-title">Հայաստանի համար առաջարկվող ծառատեսակներ</h3>
+      <div class="trees-list">
+        <div class="tree-item">
+          <img src="https://images.unsplash.com/photo-1564419431695-6e73e5ea8d4b?w=300&q=80" alt="Կաղնի">
+          <div class="tree-info">
+            <strong>Կաղնի</strong>
+            <p>Առատ թթվածնի արտադրություն, բարձր կայունություն և ավելի քան 200 տարվա կյանք։</p>
+            <span class="tree-tag">🌍 Կլիմային դիմացկուն</span>
+          </div>
+        </div>
+        <div class="tree-item">
+          <img src="https://images.unsplash.com/photo-1596395463033-d7b142ddb0ae?w=300&q=80" alt="Սոճի">
+          <div class="tree-info">
+            <strong>Սոճի</strong>
+            <p>Ձմռանը դիմացկուն է, զտում է մանր փոշին և արագ աճում։</p>
+            <span class="tree-tag">❄️ Ձմռանը դիմացկուն</span>
+          </div>
+        </div>
+        <div class="tree-item">
+          <img src="https://images.unsplash.com/photo-1567093321955-3d99e6afcebe?w=300&q=80" alt="Կաղամախի">
+          <div class="tree-info">
+            <strong>Կաղամախի</strong>
+            <p>Արագ աճում է, լավ կլանում է ջուրը և նվազեցնում ածխաթթու գազը։</p>
+            <span class="tree-tag">⚡ Արագ աճ</span>
+          </div>
+        </div>
+        <div class="tree-item">
+          <img src="https://images.unsplash.com/photo-1551218372-a8789b81b253?w=300&q=80" alt="Կեռասենի">
+          <div class="tree-info">
+            <strong>Կեռասենի</strong>
+            <p>Մրգատու ծառ է, գեղեցիկ ծաղկում է և նպաստում կենսաբազմազանությանը։</p>
+            <span class="tree-tag">🍒 Մրգատու</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DONATE -->
+<section id="donate" class="donate">
+  <div class="container">
+    <div class="donate-header">
+      <div class="section-label reveal">Նվիրատվություն</div>
+      <h2 class="section-title reveal">Դու կարող ես<br><span class="accent">փոփոխություն անել</span></h2>
+      <p class="section-desc reveal">Նվիրատվությունը սկսվում է 100 դրամից և կարող է լինել այնքան, որքան կցանկանաս։ Յուրաքանչյուր աջակցություն օգնում է տնկել ծառեր, մաքրել օդը և ուժեղացնել կանաչ համայնքները։</p>
+    </div>
+
+    <!-- Progress -->
+    <div class="progress-section reveal">
+      <div class="progress-header">
+        <div class="progress-info">
+          <span class="progress-raised">2,200,000 ֏ հավաքված է</span>
+          <span class="progress-goal">Նպատակ՝ 3,200,000 ֏</span>
+        </div>
+        <div class="progress-pct">68.75%</div>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-fill" data-width="68.75">
+          <div class="progress-pulse"></div>
+        </div>
+      </div>
+      <div class="progress-milestones">
+        <div class="milestone done">
+          <div class="ms-dot done"></div>
+          <span>1,200,000 ֏<br><small>Առաջին փուլը կատարված է</small></span>
+        </div>
+        <div class="milestone active">
+          <div class="ms-dot active"></div>
+          <span>2,200,000 ֏<br><small>Ընթացիկ փուլ</small></span>
+        </div>
+        <div class="milestone">
+          <div class="ms-dot"></div>
+          <span>3,200,000 ֏<br><small>Նպատակ</small></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="custom-donate reveal">
+      <div>
+        <h3>Անհատական նվիրատվություն</h3>
+        <p>Գումարը կարող եք նշել սկսած 100 դրամից՝ առանց վերին սահմանի։</p>
+      </div>
+      <div class="custom-donate-form">
+        <input type="number" id="customAmount" min="100" step="100" value="100" aria-label="Նվիրատվության գումար">
+        <button class="btn-donate featured-btn" onclick="openCustomDonate()">Նվիրաբերել նշված գումարը</button>
+        <span id="customAmountError" class="custom-error" role="alert"></span>
+      </div>
+    </div>
+
+    <!-- Donate cards -->
+    <div class="donate-grid">
+      <div class="donate-card reveal">
+        <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=500&q=80" alt="Ծառ տնկել">
+        <div class="donate-body">
+          <div class="donate-amount">5,000 ֏</div>
+          <h3>🌱 Ծառ տնկել</h3>
+          <p>Քո նվիրատվությամբ մեկ ծառ կտնկվի համապատասխան վայրում՝ ճշգրիտ ուղղորդմամբ։</p>
+          <button class="btn-donate" onclick="openDonate(5000)">Նվիրաբերել 5,000 ֏</button>
+        </div>
+      </div>
+      <div class="donate-card featured reveal delay-1">
+        <img src="https://images.unsplash.com/photo-1425913397330-cf8af2ff40a1?w=500&q=80" alt="Կանաչ տարածք">
+        <div class="donate-body">
+          <div class="donate-amount">25,000 ֏</div>
+          <h3>🌳 Կանաչ տարածք</h3>
+          <p>Հինգ ծառ, օդի որակի մշտադիտարկում, շնորհակալագիր և ազդեցության հաշվետվություն։</p>
+          <button class="btn-donate featured-btn" onclick="openDonate(25000)">Նվիրաբերել 25,000 ֏</button>
+        </div>
+      </div>
+      <div class="donate-card reveal delay-2">
+        <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=500&q=80" alt="Անտառ">
+        <div class="donate-body">
+          <div class="donate-amount">100,000 ֏</div>
+          <h3>🌲 Անտառի հովանավոր</h3>
+          <p>Քսանհինգ ծառ, անվան կամ լոգոյի նշում և ազդեցության ամբողջական հաշվետվություն։</p>
+          <button class="btn-donate" onclick="openDonate(100000)">Նվիրաբերել 100,000 ֏</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bank info -->
+    <div class="bank-info reveal">
+      <div class="bank-card">
+        <div class="bank-logo">
+          <div class="bank-icon">🏦</div>
+          <div>
+            <strong>Քարտային փոխանցում</strong>
+            <small>Նվիրատվության քարտ</small>
+          </div>
+        </div>
+        <div class="bank-details">
+          <div class="bank-row">
+            <span>Քարտապան</span>
+            <strong>Oxythea նախաձեռնություն</strong>
+          </div>
+          <div class="bank-row">
+            <span>Քարտի համար</span>
+            <strong id="cardNumber">5501 0400 1147 9879</strong>
+            <button class="copy-btn" onclick="copyCard()">📋</button>
+          </div>
+          <div class="bank-row">
+            <span>Նվազագույն գումար</span>
+            <strong>100 ֏</strong>
+          </div>
+          <div class="bank-row">
+            <span>Նշանակում</span>
+            <strong>Oxythea՝ կանաչ բնապահպանություն</strong>
+          </div>
+        </div>
+        <div class="bank-qr">
+          <div class="qr-placeholder">
+            <div class="qr-grid"></div>
+            <small>Արագ վճարում</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="donors-ticker reveal">
+      <span class="donors-label">💚 Վերջին նվիրատուները՝</span>
+      <div class="donors-scroll">
+        <span>Արամ Մ. — 50,000 ֏</span>
+        <span>Նարինե Կ. — 10,000 ֏</span>
+        <span>Դավիթ Հ. — 25,000 ֏</span>
+        <span>Աննա Ս. — 5,000 ֏</span>
+        <span>SmartCon AI թիմ — 200,000 ֏</span>
+        <span>Մհեր Գ. — 15,000 ֏</span>
+        <span>Արամ Մ. — 50,000 ֏</span>
+        <span>Նարինե Կ. — 10,000 ֏</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-bg">
+    <img src="https://images.unsplash.com/photo-1511497584788-876760111969?w=1920&q=80" alt="Անտառային ֆոն">
+    <div class="footer-overlay"></div>
+  </div>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <span>Oxythea</span>
+        </div>
+        <p>Բնապահպանական ծրագիր՝ SmartCon AI-ի աջակցությամբ։ Մաքուր օդ, կանաչ ապագա և առողջ աշխարհ։</p>
+        <div class="footer-social">
+          <a href="#" class="social-btn">ՖԲ</a>
+          <a href="#" class="social-btn">ԻԳ</a>
+          <a href="#" class="social-btn">ԼԻ</a>
+          <a href="#" class="social-btn">ԹՎ</a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Նավարկություն</h4>
+        <ul>
+          <li><a href="#home">Գլխավոր</a></li>
+          <li><a href="#about">Մեր մասին</a></li>
+          <li><a href="#product">Արտադրանք</a></li>
+          <li><a href="#donate">Նվիրատվություն</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Կայքում</h4>
+        <ul>
+          <li><a href="#">Գաղտնիություն</a></li>
+          <li><a href="#">Կանոններ</a></li>
+          <li><a href="#">Միանալ մեզ</a></li>
+          <li><a href="#">Հաճախակի հարցեր</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Կապ մեզ հետ</h4>
+        <p>📧 oxythea@smartconai.store</p>
+    
+        <p>📍 Երևան, Հայաստան</p>
+        <div class="footer-powered">
+          <span>Աջակցությամբ</span>
+          <strong>SmartCon AI</strong>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Oxythea: Բոլոր իրավունքները պաշտպանված են։</p>
+      <p>Ստեղծված է ավելի կանաչ Հայաստանի համար։</p>
+    </div>
+  </div>
+</footer>
+
+<!-- DONATE MODAL -->
+<div id="donateModal" class="modal-overlay" onclick="closeModal(event)">
+  <div class="modal">
+    <button class="modal-close" onclick="closeDonate()">✕</button>
+    <div class="modal-icon">💚</div>
+    <h3>Նվիրատվություն Oxythea-ին</h3>
+    <p>Քո նվիրատվությունը կօգնի մաքրել օդը, տնկել ծառեր և ստեղծել կանաչ համայնքներ։</p>
+    <div class="modal-amount" id="modalAmount">5,000 ֏</div>
+    <div class="modal-bank">
+      <div class="modal-bank-row">
+        <span>Փոխանցման եղանակ</span><strong>Քարտային փոխանցում</strong>
+      </div>
+      <div class="modal-bank-row">
+        <span>Քարտապան</span><strong>Oxythea նախաձեռնություն</strong>
+      </div>
+      <div class="modal-bank-row">
+        <span>Քարտի համար</span><strong id="modalCardNumber">5501 0400 1147 9879</strong>
+      </div>
+    </div>
+    <button class="btn-primary" style="width:100%;margin-top:1.5rem" onclick="closeDonate()">Հաստատել եմ ✓</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

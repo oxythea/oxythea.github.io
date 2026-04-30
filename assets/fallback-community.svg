@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e8f5f0"/>
+      <stop offset="1" stop-color="#a7d8b2"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="700" fill="url(#bg)"/>
+  <circle cx="830" cy="120" r="75" fill="#f0c45c" opacity=".8"/>
+  <path d="M0 530 C185 455 295 520 455 445 C650 352 785 455 1000 365 L1000 700 L0 700 Z" fill="#2d7a3a"/>
+  <path d="M0 610 C210 550 365 615 530 545 C710 470 825 530 1000 490 L1000 700 L0 700 Z" fill="#1a4d2e"/>
+  <g fill="#13351f">
+    <circle cx="275" cy="330" r="42"/>
+    <path d="M205 470 C220 392 330 392 345 470 L345 540 L205 540 Z"/>
+    <circle cx="500" cy="300" r="50"/>
+    <path d="M418 490 C435 396 565 396 582 490 L582 575 L418 575 Z"/>
+    <circle cx="715" cy="338" r="42"/>
+    <path d="M645 475 C660 398 770 398 785 475 L785 540 L645 540 Z"/>
+  </g>
+  <g fill="#4aad56">
+    <rect x="485" y="380" width="32" height="125" rx="8"/>
+    <path d="M501 250 L415 392 L587 392 Z"/>
+    <path d="M501 305 L438 415 L564 415 Z"/>
+  </g>
+</svg>
